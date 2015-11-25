@@ -1,4 +1,4 @@
-![GitHub Logo](/images/logo.png)
+[![https://gyazo.com/c181e8000847810ab3d1ed84c3e6cd5f](https://i.gyazo.com/c181e8000847810ab3d1ed84c3e6cd5f.png)](https://gyazo.com/c181e8000847810ab3d1ed84c3e6cd5f)
 # 基本的な操作シナリオ RHELOSP7
 ### ～Webサーバ構築編～
 ## はじめに
