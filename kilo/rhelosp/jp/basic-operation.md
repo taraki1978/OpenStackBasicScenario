@@ -1,3 +1,4 @@
+![GitHub Logo](/images/logo.png)
 # 基本的な操作シナリオ RHELOSP7
 ### ～Webサーバ構築編～
 ## はじめに
