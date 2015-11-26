@@ -30,4 +30,4 @@ PC上で、Webブラウザを起動し、接続先を入力して、アクセス
 [![https://gyazo.com/557980fe1ee02f3895cf279c23c4f5ae](https://i.gyazo.com/557980fe1ee02f3895cf279c23c4f5ae.png)](https://gyazo.com/557980fe1ee02f3895cf279c23c4f5ae)
 
 
-[次：ネットワークの作成]()
+[次：ネットワークの作成](https://github.com/taraki1978/OpenStackBasicScenario/blob/master/kilo/rhelosp/jp/scenario/02-create-network.md)
