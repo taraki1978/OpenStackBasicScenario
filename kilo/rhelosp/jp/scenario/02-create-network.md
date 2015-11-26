@@ -74,4 +74,5 @@ exam-netは、事前にクラウド管理者によって、外部(External)ネ�
 
 [![https://gyazo.com/bf46013e6cbac916e06e6a17e3f970c0](https://i.gyazo.com/bf46013e6cbac916e06e6a17e3f970c0.png)](https://gyazo.com/bf46013e6cbac916e06e6a17e3f970c0)
 
+[次：ルータの作成へ](https://github.com/taraki1978/OpenStackBasicScenario/blob/master/kilo/rhelosp/jp/scenario/03-create-router.md)
 
