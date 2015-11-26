@@ -40,3 +40,6 @@ Webサーバを構築してみます。
 
 ## ログイン
 [![https://gyazo.com/cac901c6f881f4e24abf410c2c18d2f2](https://i.gyazo.com/cac901c6f881f4e24abf410c2c18d2f2.gif)](https://gyazo.com/cac901c6f881f4e24abf410c2c18d2f2)
+
+
+[![https://gyazo.com/810d79c904544d84f275bc3ddf6db444](https://i.gyazo.com/810d79c904544d84f275bc3ddf6db444.gif)](https://gyazo.com/810d79c904544d84f275bc3ddf6db444)
