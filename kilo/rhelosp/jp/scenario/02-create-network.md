@@ -8,7 +8,9 @@
 [![https://gyazo.com/8a7a02aa22a28a943ede90aad63dc687](https://i.gyazo.com/8a7a02aa22a28a943ede90aad63dc687.gif)](https://gyazo.com/8a7a02aa22a28a943ede90aad63dc687)
 
 *ネットワーク画面*
+
 既存で利用可能なネットワークとして、exam-net がリストに表示されます。
+
 ```
 exam-netは、事前にクラウド管理者によって、外部(External)ネットワークとして構築されていることを想定してます。
 まだ、外部ネットワークが構成されていない場合、ネットワークリストには何も表示されません。
