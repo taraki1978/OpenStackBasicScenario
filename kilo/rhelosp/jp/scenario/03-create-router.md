@@ -59,3 +59,6 @@
 ネットワークトポロジー図にて、ルータがexam-netネットワークとprivネットワークに接続されている事を確認します。
 [![https://gyazo.com/5acff8541d51cf5dfaaf2e1ffbcf6ef2](https://i.gyazo.com/5acff8541d51cf5dfaaf2e1ffbcf6ef2.png)](https://gyazo.com/5acff8541d51cf5dfaaf2e1ffbcf6ef2)
 
+
+[次：インスタンス起動の準備](https://github.com/taraki1978/OpenStackBasicScenario/blob/master/kilo/rhelosp/jp/scenario/04-prepare-to-launch-instance.md)
+
