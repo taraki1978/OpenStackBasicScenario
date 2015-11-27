@@ -46,13 +46,13 @@ sshクライアントソフトウェアを起動し、インスタンスVMのフ
 コマンドラインにて、yum-config-mangerコマンドを実行し、内部リポジトリを追加します。
 ※参照先リポジトリは環境に合わせて適宜修正してください。
 
-'''command
+''' command
 $ sudo yum-config-manager --add-repo=http://192.168.50.65/Linux/rhel/7.1/os/x86_64
 '''
 
 yum repolist を実行し、リポジトリが追加されていることを確認します。
 
-'''command
+''' command
 $ yum repolist
 '''
 
@@ -65,7 +65,7 @@ $ echo "gpgcheck=0" |sudo tee -a /etc/yum.repos.d/192.168.50.65_Linux_rhel_7.1_o
 ### httpd(webサーバプログラム)のインストール
 yum コマンドを使用して、httpd プログラムをインストールします。
 
-'''command
+''' command
 $ sudo yum install -y httpd
 '''
 
