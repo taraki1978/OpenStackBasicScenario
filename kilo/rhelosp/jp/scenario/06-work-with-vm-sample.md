@@ -45,9 +45,11 @@ sshクライアントソフトウェアを起動し、インスタンスVMのフ
 
 コマンドラインにて、yum-config-mangerコマンドを実行し、内部リポジトリを追加します。
 ※参照先リポジトリは環境に合わせて適宜修正してください。
-'''command 
+
+'''command
 $ sudo yum-config-manager --add-repo=http://192.168.50.65/Linux/rhel/7.1/os/x86_64
 '''
+
 yum repolist を実行し、リポジトリが追加されていることを確認します。
 
 '''command
@@ -56,7 +58,7 @@ $ yum repolist
 
 署名のチェックをスキップしする必要がある場合、/etc/yum.repo.d/repofile.repo の追加したリポジトリに、"gpgcheck=0"を追加設定する必要があります。下記は、前述のyum-config-manager実行直後の状態で、ファイル名が、"192.168.50.65_Linux_rhel_7.1_os_x86_64.repo"である場合、最終行に"gpgcheck"無効化の設定を入れている例となります。
 
-'''gpgcheck無効化の例
+'''
 $ echo "gpgcheck=0" |sudo tee -a /etc/yum.repos.d/192.168.50.65_Linux_rhel_7.1_os_x86_64.repo
 '''
 
