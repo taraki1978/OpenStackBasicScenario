@@ -58,4 +58,37 @@
 
 [![https://gyazo.com/98085888cbabb4533152ab64a4ee1076](https://i.gyazo.com/98085888cbabb4533152ab64a4ee1076.gif)](https://gyazo.com/98085888cbabb4533152ab64a4ee1076)
 
+設定した内容を確認し、ウィザード右下の「起動」ボタンを押下します。インスタンスの起動処理が実行されます。
+
+[![https://gyazo.com/f399630e0a5665f4a5e354783a1b9bd3](https://i.gyazo.com/f399630e0a5665f4a5e354783a1b9bd3.gif)](https://gyazo.com/f399630e0a5665f4a5e354783a1b9bd3)
+
+インスタンスの起動処理が管理完了すると、ステータス欄が稼働中となります。
+
+[![https://gyazo.com/151dc4e41ca6b3865ce7f6e5377f42ae](https://i.gyazo.com/151dc4e41ca6b3865ce7f6e5377f42ae.png)](https://gyazo.com/151dc4e41ca6b3865ce7f6e5377f42ae)
+
+### フローティングIPのインスタンスVMへの割り当て
+
+作成されたインスタンスの「アクション」ドロップダウンリストから、「Floating IP の割り当て」を選択します。Floating IPの割り当て管理ウィザードが開きます。
+
+[![https://gyazo.com/c8199d8721d46c6767aa8b6582400ec7](https://i.gyazo.com/c8199d8721d46c6767aa8b6582400ec7.gif)](https://gyazo.com/c8199d8721d46c6767aa8b6582400ec7)
+
+IPアドレス欄ドロップダウンリストから、割り当てるIP（インスタンス起動の前準備（続き）「フローティングIPの確保」操作で確保したもの）を選択します。
+
+[![https://gyazo.com/be97c51350b480ff5320a1e90771feee](https://i.gyazo.com/be97c51350b480ff5320a1e90771feee.gif)](https://gyazo.com/be97c51350b480ff5320a1e90771feee)
+
+設定が完了した後、「割り当て」ボタンを押下します。インスタンスVMへ、フローティングIPが割り当てられます。
+
+[![https://gyazo.com/8301ee7b6e5cd82731c7a5ec4e1f57d7](https://i.gyazo.com/8301ee7b6e5cd82731c7a5ec4e1f57d7.gif)](https://gyazo.com/8301ee7b6e5cd82731c7a5ec4e1f57d7)
+
+インスタンス一覧のIPアドレス欄の記載内容が、内部ネットワーク(172.18.1.0/24)と、外部ネットワーク(192.168.50.0/24)からそれぞれ割り当てられている状態となります。
+
+[![https://gyazo.com/8e830a38a4c03c0ac2b533eb64239a0c](https://i.gyazo.com/8e830a38a4c03c0ac2b533eb64239a0c.png)](https://gyazo.com/8e830a38a4c03c0ac2b533eb64239a0c)
+
+### 構築状況の確認
+
+画面上段のネットワークドロップダウンリストから、「ネットワークトポロジー」メニューを選択し、ネットワークトポロジーのイメージを表示します。
+
+[![https://gyazo.com/c43fb28adb4f3a72db1449cdababbebc](https://i.gyazo.com/c43fb28adb4f3a72db1449cdababbebc.gif)](https://gyazo.com/c43fb28adb4f3a72db1449cdababbebc)
+
+インスタンスの起動により、内部ネットワークに、インスタンスVM（web01)が接続されていることを確認します。
 
