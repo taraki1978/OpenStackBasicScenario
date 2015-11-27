@@ -70,3 +70,5 @@
 ICMP,HTTP,SSHのルール作成が完了すると、ルール一覧には5行のルールが表示された状態となります。
 [![https://gyazo.com/c84cb6150bbd190527fb58ff5e1ebe4d](https://i.gyazo.com/c84cb6150bbd190527fb58ff5e1ebe4d.png)](https://gyazo.com/c84cb6150bbd190527fb58ff5e1ebe4d)
 
+
+[次:インスタンス起動の準備(続き)](https://github.com/taraki1978/OpenStackBasicScenario/blob/master/kilo/rhelosp/jp/scenario/04-prepare-to-launch-instance-02.md)
