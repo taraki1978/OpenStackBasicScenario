@@ -92,3 +92,5 @@ IPアドレス欄ドロップダウンリストから、割り当てるIP（イ�
 
 インスタンスの起動により、内部ネットワークに、インスタンスVM（web01)が接続されていることを確認します。
 
+
+[次：インスタンスVMでの作業（例） ](https://github.com/taraki1978/OpenStackBasicScenario/blob/master/kilo/rhelosp/jp/scenario/06-work-with-vm-sample.md)
