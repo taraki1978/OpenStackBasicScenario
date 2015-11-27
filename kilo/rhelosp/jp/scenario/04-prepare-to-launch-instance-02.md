@@ -64,3 +64,4 @@ Floating IPの確保ウィザードにて、下表の項目を選択し、「IP�
 ここまでの操作によって、フローティングIPが予約された状態となります。
 
 
+[次：インスタンスの起動](https://github.com/taraki1978/OpenStackBasicScenario/blob/master/kilo/rhelosp/jp/scenario/05-launch-instance.md)
