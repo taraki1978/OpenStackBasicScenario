@@ -15,9 +15,11 @@ sshクライアントソフトウェアを起動し、インスタンスVMのフ
     -. (インスタンス起動の前準備（続き）[キーペアの作成]にてダウンロードしたファイル)
     
 
+
 以下は、Windowsマシンからteratermを使用した場合の操作例となります。
 
 #### 接続先IPを指定
+
 ホスト欄に、接続先のインスタンスVMのフローティングIPを指定します。
 
 [![https://gyazo.com/4f166f75cb3de1a8d9745666d92d9af4](https://i.gyazo.com/4f166f75cb3de1a8d9745666d92d9af4.png)](https://gyazo.com/4f166f75cb3de1a8d9745666d92d9af4)
@@ -41,59 +43,48 @@ sshクライアントソフトウェアを起動し、インスタンスVMのフ
 
 
 ### 内部リポジトリの登録
+
 ※内部リポジトリではなく、直接Red Haty社のリポジトリを使用する場合は、"subscription-manager register"を実行してください。
 
 コマンドラインにて、yum-config-mangerコマンドを実行し、内部リポジトリを追加します。
 ※参照先リポジトリは環境に合わせて適宜修正してください。
 
-''' command
-
+```
 $ sudo yum-config-manager --add-repo=http://192.168.50.65/Linux/rhel/7.1/os/x86_64
-
-'''
+```
 
 yum repolist を実行し、リポジトリが追加されていることを確認します。
 
-''' command
-
+```
 $ yum repolist
-
-'''
+```
 
 署名のチェックをスキップしする必要がある場合、/etc/yum.repo.d/repofile.repo の追加したリポジトリに、"gpgcheck=0"を追加設定する必要があります。下記は、前述のyum-config-manager実行直後の状態で、ファイル名が、"192.168.50.65_Linux_rhel_7.1_os_x86_64.repo"である場合、最終行に"gpgcheck"無効化の設定を入れている例となります。
 
-'''
-
+```
 $ echo "gpgcheck=0" |sudo tee -a /etc/yum.repos.d/192.168.50.65_Linux_rhel_7.1_os_x86_64.repo
-
-'''
+```
 
 ### httpd(webサーバプログラム)のインストール
 yum コマンドを使用して、httpd プログラムをインストールします。
 
-''' command
-
+``` command
 $ sudo yum install -y httpd
-
-'''
+```
 
 ### シンプルなHTMLコンテンツの作成
 Webページを作成します。 デフォルトのDocument Root 配下に、index.htmlをviエディタで作成しても構いませんが、より簡単に行うためには、下記のコマンドを実行します。
 
-'''
-
+```
 $ hostname | sudo tee -a /var/www/html/index.html
-
-'''
+```
 
 ### httpdサービスの起動
 Webサーバプログラムを起動します。
 
-'''
-
+```
 $ sudo systemctl start httpd
-
-'''
+```
 
 ### 接続テスト
 操作を行っているPC上で、Webブラウザを立ち上げ、フローティングIPを指定して接続します。画面にあるように、画面が応答されれば成功となります。
