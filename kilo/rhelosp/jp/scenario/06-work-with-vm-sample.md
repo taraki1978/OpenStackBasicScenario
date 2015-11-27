@@ -47,40 +47,52 @@ sshクライアントソフトウェアを起動し、インスタンスVMのフ
 ※参照先リポジトリは環境に合わせて適宜修正してください。
 
 ''' command
+
 $ sudo yum-config-manager --add-repo=http://192.168.50.65/Linux/rhel/7.1/os/x86_64
+
 '''
 
 yum repolist を実行し、リポジトリが追加されていることを確認します。
 
 ''' command
+
 $ yum repolist
+
 '''
 
 署名のチェックをスキップしする必要がある場合、/etc/yum.repo.d/repofile.repo の追加したリポジトリに、"gpgcheck=0"を追加設定する必要があります。下記は、前述のyum-config-manager実行直後の状態で、ファイル名が、"192.168.50.65_Linux_rhel_7.1_os_x86_64.repo"である場合、最終行に"gpgcheck"無効化の設定を入れている例となります。
 
 '''
+
 $ echo "gpgcheck=0" |sudo tee -a /etc/yum.repos.d/192.168.50.65_Linux_rhel_7.1_os_x86_64.repo
+
 '''
 
 ### httpd(webサーバプログラム)のインストール
 yum コマンドを使用して、httpd プログラムをインストールします。
 
 ''' command
+
 $ sudo yum install -y httpd
+
 '''
 
 ### シンプルなHTMLコンテンツの作成
 Webページを作成します。 デフォルトのDocument Root 配下に、index.htmlをviエディタで作成しても構いませんが、より簡単に行うためには、下記のコマンドを実行します。
 
 '''
+
 $ hostname | sudo tee -a /var/www/html/index.html
+
 '''
 
 ### httpdサービスの起動
 Webサーバプログラムを起動します。
 
 '''
+
 $ sudo systemctl start httpd
+
 '''
 
 ### 接続テスト
