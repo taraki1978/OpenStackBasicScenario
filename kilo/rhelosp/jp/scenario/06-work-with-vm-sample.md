@@ -98,4 +98,3 @@ OpenStack環境上に、Webサーバを構築するシナリオは、以上と�
 
 
 
-[![https://gyazo.com/245654191fccbb7184460f2144aa16bf](https://i.gyazo.com/245654191fccbb7184460f2144aa16bf.gif)](https://gyazo.com/245654191fccbb7184460f2144aa16bf)
